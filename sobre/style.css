@@ -1,0 +1,24 @@
+.timeline {
+    position: relative;
+    padding: 50px 0;
+    
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #00f7ff;
+    
+}
+
+.hexagon {
+    width: 60px;
+    height: 60px;
+    background: #00f7ff;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    animation: hexPulse 2s infinite;
+    
+}

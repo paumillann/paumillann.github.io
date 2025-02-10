@@ -1,0 +1,29 @@
+.cyber-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #00f7ff;
+}
+
+.cyber-input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #00f7ff;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    transition: 0.3s;
+    color: #00f7ff;
+}
+
+.cyber-input:focus ~ .floating-label {
+    transform: translateY(-25px);
+    font-size: 0.8em;
+}
